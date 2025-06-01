@@ -1,6 +1,6 @@
 import { Children, ComponentPropsWithoutRef, ElementRef, forwardRef, HTMLAttributes, isValidElement } from 'react'
 
-import { Button, Icon } from '@/components'
+import { Button, IconV2 } from '@/components'
 import { usePortal } from '@/context'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { cn } from '@utils/cn'
@@ -73,7 +73,7 @@ const DialogContent = forwardRef<ElementRef<typeof DialogPrimitive.Content>, Dia
           {isShowCloseIcon && (
             <DialogPrimitive.Close className="absolute right-3 top-3.5 disabled:pointer-events-none" asChild>
               <Button size="sm" variant="ghost" iconOnly>
-                <Icon name="close" size={16} />
+                <IconV2 name="xmark" />
                 <span className="sr-only">Close</span>
               </Button>
             </DialogPrimitive.Close>

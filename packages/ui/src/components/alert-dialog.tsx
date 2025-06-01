@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Button, Icon } from '@/components'
+import { Button, IconV2 } from '@/components'
 import { buttonVariants } from '@/components/button'
 import { usePortal } from '@/context'
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog'
@@ -75,7 +75,7 @@ const AlertDialogContent = React.forwardRef<
           aria-label="Close"
           onClick={onClose}
         >
-          <Icon name="close" size={16} />
+          <IconV2 name="xmark" />
         </Button>
 
         <div

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { Icon } from '@/components'
+import { Icon, IconV2 } from '@/components'
 import { TFunction } from 'i18next'
 
 import { CommandPalette } from './command-palette'
@@ -57,12 +57,12 @@ export function CommandPaletteWrapper({ t }: CommandPaletteProps) {
       {
         label: 'Create repository',
         action: () => alert('Create Repository'),
-        icon: () => <Icon name="plus" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="plus" size={14} className="text-icons-1" />
       },
       {
         label: 'Import repository',
         action: () => alert('Import Repository'),
-        icon: () => <Icon name="download" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="download" size={14} className="text-icons-1" />
       }
     ],
     [PageKey.PROJECTS]: [
@@ -75,12 +75,12 @@ export function CommandPaletteWrapper({ t }: CommandPaletteProps) {
       {
         label: 'Create project',
         action: () => alert('Create Project'),
-        icon: () => <Icon name="plus" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="plus" size={14} className="text-icons-1" />
       },
       {
         label: 'Import project',
         action: () => alert('Import Project'),
-        icon: () => <Icon name="download" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="download" size={14} className="text-icons-1" />
       }
     ],
     [PageKey.PIPELINES]: [
@@ -88,12 +88,12 @@ export function CommandPaletteWrapper({ t }: CommandPaletteProps) {
         label: 'Search pipelines...',
         key: PageKey.PIPELINES,
         shortcut: ['⇧', 'L'],
-        icon: () => <Icon name="pipelines" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="pipeline" size={14} className="text-icons-1" />
       },
       {
         label: 'Create pipeline',
         action: () => alert('Create Pipeline'),
-        icon: () => <Icon name="plus" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="plus" size={14} className="text-icons-1" />
       }
     ]
   }
@@ -103,27 +103,27 @@ export function CommandPaletteWrapper({ t }: CommandPaletteProps) {
       {
         label: 'petstore-app',
         url: '/canary/repos/petstore-app/summary',
-        icon: () => <Icon name="repositories" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="repository" size={14} className="text-icons-1" />
       },
       {
         label: 'RealWorld',
         url: '/canary/repos/real-world/summary',
-        icon: () => <Icon name="repositories" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="repository" size={14} className="text-icons-1" />
       },
       {
         label: 'sock shop',
         url: '/canary/repos/sock-shop/summary',
-        icon: () => <Icon name="repositories" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="repository" size={14} className="text-icons-1" />
       },
       {
         label: 'anthos',
         url: '/canary/repos/anthos/summary',
-        icon: () => <Icon name="repositories" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="repository" size={14} className="text-icons-1" />
       },
       {
         label: 'acme-web',
         url: '/canary/repos/acme-web/summary',
-        icon: () => <Icon name="repositories" size={14} className="text-icons-1" />
+        icon: () => <IconV2 name="repository" size={14} className="text-icons-1" />
       }
     ],
     [PageKey.PROJECTS]: [

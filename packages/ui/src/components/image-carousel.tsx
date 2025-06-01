@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 
-import { Button, Carousel, Dialog, Icon, Spacer } from '@/components'
+import { Button, Carousel, Dialog, IconV2, Spacer } from '@/components'
 import { INITIAL_ZOOM_LEVEL, ZOOM_INC_DEC_LEVEL } from '@/utils/utils'
 
 export interface ImageCarouselProps {
@@ -56,7 +56,7 @@ export const ImageCarousel: FC<ImageCarouselProps> = ({ isOpen, setIsOpen, imgEv
             }}
             title="Zoom out"
           >
-            <Icon name="minus" size={16} />
+            <IconV2 name="minus" />
           </Button>
           <Button
             variant="outline"
@@ -70,7 +70,7 @@ export const ImageCarousel: FC<ImageCarouselProps> = ({ isOpen, setIsOpen, imgEv
             }}
             title="Zoom in"
           >
-            <Icon name="plus" size={16} />
+            <IconV2 name="plus" />
           </Button>
         </Dialog.Footer>
       </Dialog.Content>

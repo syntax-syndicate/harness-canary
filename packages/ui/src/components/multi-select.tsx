@@ -4,7 +4,7 @@ import {
   Button,
   ControlGroup,
   DropdownMenu,
-  Icon,
+  IconV2,
   Label,
   Message,
   MessageTheme,
@@ -63,7 +63,7 @@ export const MultiSelect = <T = unknown,>({
       <DropdownMenu.Root>
         <DropdownMenu.Trigger className="data-[state=open]:border-cn-borders-8 flex h-9 w-full items-center justify-between rounded border border-cn-borders-2 bg-cn-background-2 px-3 transition-colors">
           {placeholder}
-          <Icon name="chevron-down" className="chevron-down ml-auto" size={12} />
+          <IconV2 name="nav-arrow-down" className="ml-auto" size={12} />
         </DropdownMenu.Trigger>
 
         <DropdownMenu.Content style={{ width: 'var(--radix-dropdown-menu-trigger-width)' }}>
@@ -96,7 +96,7 @@ export const MultiSelect = <T = unknown,>({
                     }}
                   >
                     <div className="flex items-center gap-x-2">
-                      {isSelected && <Icon className="min-w-3 text-icons-2" name="tick" size={12} />}
+                      {isSelected && <IconV2 className="min-w-3 text-icons-2" name="check" size={12} />}
                       {customOptionElem ? (
                         customOptionElem(option)
                       ) : (
@@ -121,7 +121,7 @@ export const MultiSelect = <T = unknown,>({
           {selectedItems.map(it => (
             <Button key={it.id} size="sm" type="button" variant="outline" onClick={() => handleChange(it)}>
               {it.label}
-              <Icon name="close" size={10} />
+              <IconV2 name="xmark" size={10} />
             </Button>
           ))}
         </div>
